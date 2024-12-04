@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 
 
-
 def load_input():
+    data = list()
     with open('input') as fd:
-        data = list()
         for line in fd:
             data.append([int(i) for i in line.strip().split()])
     return data
